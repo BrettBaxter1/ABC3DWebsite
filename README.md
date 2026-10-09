@@ -1,4 +1,6 @@
 # ABC3D
+An OpenGL 3D modeler from scratch.
+University of Utah Spring-Fall 2026 CS Undergrad Capstone Project.
 
 ## Authors
 + Brett Baxter
