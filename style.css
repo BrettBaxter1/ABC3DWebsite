@@ -1,0 +1,171 @@
+/* Structural styles only. Add your own colors, fonts, images, and decoration. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #d3d3d3;
+  background-image: url("resources/background.png");
+  background-repeat: repeat;
+  /*background-size: 128px 128px; */
+}
+
+.site-layout {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  width: min(1200px, calc(100% - 2rem));
+  min-height: calc(100vh - 4rem);
+  margin: 2rem auto;
+}
+
+.site-header {
+  grid-column: 1 / -1;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #222;
+}
+
+.site-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.site-header p {
+  margin: 0.25rem 0 0;
+}
+
+.site-sidebar {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #222;
+}
+
+.site-sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-sidebar li + li {
+  margin-top: 0.5rem;
+}
+
+.site-content {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #222;
+}
+
+.page-section + .page-section {
+  margin-top: 2rem;
+}
+
+.releases-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.releases-table caption {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.releases-table th,
+.releases-table td {
+  border: 1px solid currentColor;
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid currentColor;
+}
+
+.team-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0 0 1rem;
+  overflow: hidden;
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-info h3 {
+  margin: 0;
+}
+
+.team-role {
+  margin: 0.25rem 0 1rem;
+  font-style: italic;
+}
+
+.site-footer {
+  grid-column: 1 / -1;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #222;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .site-layout {
+    display: block;
+    width: calc(100% - 1rem);
+    min-height: calc(100vh - 1rem);
+    margin: 0.5rem auto;
+  }
+
+  .site-header,
+  .site-sidebar,
+  .site-content,
+  .site-footer {
+    margin-bottom: 1rem;
+  }
+
+  .site-sidebar,
+  .site-content,
+  .site-footer {
+    padding: 1rem;
+  }
+
+  .site-sidebar li {
+    display: inline-block;
+    margin: 0 1rem 0.5rem 0;
+  }
+
+  .site-sidebar li + li {
+    margin-top: 0;
+  }
+}
