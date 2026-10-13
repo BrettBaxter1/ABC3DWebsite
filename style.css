@@ -8,7 +8,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #d3d3d3;
-  background-image: url("resources/background.png");
+  background-image: url("resources/background2.jpg");
   background-repeat: repeat;
   /*background-size: 128px 128px; */
 }
@@ -16,7 +16,7 @@ body {
 .site-layout {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr);
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
   gap: 1rem;
   width: min(1200px, calc(100% - 2rem));
   min-height: calc(100vh - 4rem);
@@ -25,9 +25,18 @@ body {
 
 .site-header {
   grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem;
   background: #fff;
   border: 1px solid #222;
+}
+
+.header-cube {
+  width: 80px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .site-title {
@@ -40,9 +49,22 @@ body {
   margin: 0.25rem 0 0;
 }
 
+.ad-banner {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .site-sidebar {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
   padding: 1rem;
   background: #fff;
   border: 1px solid #222;
@@ -60,15 +82,80 @@ body {
 
 .site-content {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
   min-width: 0;
   padding: 1rem;
   background: #fff;
   border: 1px solid #222;
 }
 
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-list span {
+  display: inline-block;
+  width: 100px;
+}
+
+.contact-list img {
+  display: block;
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
+.downloads-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.downloads-title img {
+  width: 140px;
+  height: auto;
+}
+
+.platform-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.5rem auto 1rem;
+  padding: 0.75rem;
+  border: 1px solid currentColor;
+  text-align: center;
+}
+
+.platform-notice > img {
+  width: 40px;
+  height: auto;
+}
+
+.platform-notice-copy p {
+  margin: 0.25rem 0;
+}
+
 .page-section + .page-section {
   margin-top: 2rem;
+}
+
+.page-section h2 img {
+  display: inline-block;
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.construction-image {
+  display: block;
+  width: calc(100% - 1rem);
+  max-width: none;
+  height: auto;
+  margin: 1rem 0.5rem 0;
 }
 
 .releases-table {
@@ -130,6 +217,11 @@ body {
 
 .site-footer {
   grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding: 1rem;
   background: #fff;
   border: 1px solid #222;
@@ -137,6 +229,18 @@ body {
 
 .site-footer p {
   margin: 0;
+}
+
+.contact-footer-image {
+  width: 150px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.geocities-footer-image {
+  width: 100px;
+  height: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 640px) {
