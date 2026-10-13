@@ -7,6 +7,7 @@
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   background-color: #d3d3d3;
   background-image: url("resources/background2.jpg");
   background-repeat: repeat;
@@ -29,7 +30,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: #fff;
+  background: rgba(255, 250, 240, 0.9);
   border: 1px solid #222;
 }
 
@@ -43,6 +44,19 @@ body {
   display: inline-block;
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.title-a {
+  color: #d00;
+}
+
+.title-b {
+  color: #080;
+}
+
+.title-c {
+  color: #06c;
 }
 
 .site-header p {
@@ -66,7 +80,7 @@ body {
   grid-column: 1;
   grid-row: 3;
   padding: 1rem;
-  background: #fff;
+  background: rgba(255, 250, 240, 0.9);
   border: 1px solid #222;
 }
 
@@ -74,6 +88,41 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.site-sidebar a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #111;
+  text-decoration: none;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.site-sidebar li:nth-child(1) a {
+  background: linear-gradient(#ff8080, #e53935);
+}
+
+.site-sidebar li:nth-child(2) a {
+  background: linear-gradient(#ffd180, #fb8c00);
+}
+
+.site-sidebar li:nth-child(3) a {
+  background: linear-gradient(#fff59d, #fdd835);
+}
+
+.site-sidebar li:nth-child(4) a {
+  background: linear-gradient(#a5d6a7, #43a047);
+}
+
+.site-sidebar li:nth-child(5) a {
+  background: linear-gradient(#90caf9, #1e88e5);
+}
+
+.site-sidebar a:hover,
+.site-sidebar a:focus-visible {
+  filter: brightness(1.08);
 }
 
 .site-sidebar li + li {
@@ -85,7 +134,7 @@ body {
   grid-row: 3;
   min-width: 0;
   padding: 1rem;
-  background: #fff;
+  background: rgba(255, 250, 240, 0.9);
   border: 1px solid #222;
 }
 
@@ -124,6 +173,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
+  width: fit-content;
+  max-width: 100%;
   margin: 0.5rem auto 1rem;
   padding: 0.75rem;
   border: 1px solid currentColor;
@@ -223,7 +274,7 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
-  background: #fff;
+  background: rgba(255, 250, 240, 0.9);
   border: 1px solid #222;
 }
 
