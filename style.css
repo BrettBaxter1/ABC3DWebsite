@@ -7,7 +7,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
   background-color: #d3d3d3;
   background-image: url("resources/background2.jpg");
   background-repeat: repeat;
@@ -120,6 +120,10 @@ body {
   background: linear-gradient(#90caf9, #1e88e5);
 }
 
+.site-sidebar li:nth-child(6) a {
+  background: linear-gradient(#ce93d8, #8e24aa);
+}
+
 .site-sidebar a:hover,
 .site-sidebar a:focus-visible {
   filter: brightness(1.08);
@@ -194,7 +198,8 @@ body {
   margin-top: 2rem;
 }
 
-.page-section h2 img {
+.page-section h2 img,
+.page-section h3 img {
   display: inline-block;
   width: 30px;
   height: auto;
@@ -213,6 +218,11 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .releases-table caption {
@@ -261,6 +271,11 @@ body {
   margin: 0;
 }
 
+.team-contact-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
 .team-role {
   margin: 0.25rem 0 1rem;
   font-style: italic;
@@ -294,7 +309,7 @@ body {
   margin-left: auto;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .site-layout {
     display: block;
     width: calc(100% - 1rem);
@@ -309,6 +324,18 @@ body {
     margin-bottom: 1rem;
   }
 
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .downloads-title {
+    flex-wrap: wrap;
+  }
+
+  .platform-notice {
+    flex-wrap: wrap;
+  }
+
   .site-sidebar,
   .site-content,
   .site-footer {
@@ -316,11 +343,31 @@ body {
   }
 
   .site-sidebar li {
-    display: inline-block;
-    margin: 0 1rem 0.5rem 0;
+    display: block;
+    margin: 0;
   }
 
   .site-sidebar li + li {
-    margin-top: 0;
+    margin-top: 0.5rem;
+  }
+
+  .site-sidebar a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .contact-list li {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-footer-image {
+    width: 110px;
+  }
+
+  .geocities-footer-image {
+    width: 80px;
   }
 }
