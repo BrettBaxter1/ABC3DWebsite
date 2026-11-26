@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements - ABC3D</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site-layout">
+      <header class="site-header"><img class="header-cube" src="resources/3dcube.gif" alt="3D cube" /><div><a href="index.html" class="site-title"><span class="title-a">A</span><span class="title-b">B</span><span class="title-c">C</span>3D</a><p>3D Modeling for Beginners</p></div></header>
+      <div class="ad-banner"><img src="resources/ad.gif" alt="Advertisement" /></div>
+      <aside class="site-sidebar"><nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="team.html">The Team</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="downloads.html">Downloads</a></li><li><a href="elements.html">Tutorial</a></li></ul></nav></aside>
+      <main class="site-content">
+        <nav class="tutorial-banner" aria-label="Tutorial sections"><a href="elements.html">Elements</a><a href="tools.html">Tools</a><a href="modes.html">Modes</a><a href="help.html">Help</a><a href="settings.html">Settings</a><a href="file.html">File I/O</a></nav>
+        <h1>Elements</h1>
+        <h2>Introduction</h2>
+        <p>3D modeling at its simplest is the manipulation of elements. In ABC3D there are four different types of elements: </p>
+        <ul>
+          <li>Object</li>
+          <li>Face</li>
+          <li>Edge</li>
+          <li>Vertex</li>
+        </ul>
+        <figure class="tutorial-figure">
+          <img src="resources/tutorial/elements.png" alt="ABC3D element selection controls" />
+          <figcaption>Element selection controls, found at the bottom left of the viewport</figcaption>
+        </figure>
+        <h2>Restrictions</h2>
+        <p>Not every tool works on every element type. When changing tools you might find that you cannot select some element types, this is because some operations are not defined on that element type.</p>
+        <p>For example, you cannot rotate a vertex. This is because it is simply a point in space, with no rotation defined.</p>
+        <figure class="tutorial-figure">
+          <img src="resources/tutorial/restrictedelements.png" alt="ABC3D restricted element controls" />
+          <figcaption>An example of limited element selection</figcaption>
+        </figure>
+        <h2>Adding Elements</h2>
+        <p>To create more realistic and higher resolution models, you need to add more elements. You cannot get an adequate amount of control using just a base cube which has 8 vertices total.</p>
+        <p>There are some tools available to help with that: </p>
+        <ul>
+          <li>Subdivision: Adds more vertices and edges.</li>
+          <li>Subdivision & Smooth: Adds more vertices and edges, and also deforms the model to look smooth.</li>
+          <li>Triangulation: Splits faces into triangles.</li>
+          <li>Loop Cut: Adds more edges.</li>
+          <li>Knife: Cuts an edge.</li>
+        </ul>
+        <figure class="tutorial-figure">
+          <img src="resources/tutorial/addingelements.png" alt="ABC3D adding elements tools" />
+          <figcaption>Some tools for adding elements to a model, and a cube subdivided onces</figcaption>
+        </figure>
+      </main>
+      <footer class="site-footer"><p><a href="team.html"><img class="contact-footer-image" src="resources/contact.gif" alt="Contact the team" /></a> | 2026 ABC3D</p><img class="geocities-footer-image" src="resources/geocities.gif" alt="GeoCities" /></footer>
+    </div>
+  </body>
+</html>

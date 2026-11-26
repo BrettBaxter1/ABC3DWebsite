@@ -142,6 +142,56 @@ body {
   border: 1px solid #222;
 }
 
+.tutorial-banner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid currentColor;
+  background: rgba(255, 250, 240, 0.7);
+}
+
+.tutorial-banner a {
+  flex: 1 1 0;
+  padding: 0.5rem;
+  color: #111;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  background: linear-gradient(#fff59d, #fdd835);
+}
+
+.tutorial-banner a:nth-child(1) {
+  background: linear-gradient(#ff8080, #e53935);
+}
+
+.tutorial-banner a:nth-child(2) {
+  background: linear-gradient(#ffd180, #fb8c00);
+}
+
+.tutorial-banner a:nth-child(3) {
+  background: linear-gradient(#fff59d, #fdd835);
+}
+
+.tutorial-banner a:nth-child(4) {
+  background: linear-gradient(#a5d6a7, #43a047);
+}
+
+.tutorial-banner a:nth-child(5) {
+  background: linear-gradient(#90caf9, #1e88e5);
+}
+
+.tutorial-banner a:nth-child(6) {
+  background: linear-gradient(#ce93d8, #8e24aa);
+}
+
+.tutorial-banner a:hover,
+.tutorial-banner a:focus-visible {
+  filter: brightness(1.08);
+}
+
 .contact-list li {
   display: flex;
   align-items: center;
@@ -216,6 +266,75 @@ body {
   max-width: none;
   height: auto;
   margin: 1rem 0.5rem 0;
+}
+
+.tutorial-figure {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid currentColor;
+  background: rgba(255, 250, 240, 0.7);
+}
+
+.tutorial-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tutorial-figure figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.tools-page .tutorial-figure {
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.help-page .tutorial-figure {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.help-page .tutorial-figure img {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.settings-page .tutorial-figure {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.settings-page .tutorial-figure img {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.settings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.settings-table th,
+.settings-table td {
+  border: 1px solid currentColor;
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.settings-table img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
 }
 
 .releases-table {
@@ -395,6 +514,10 @@ body {
   }
 
   .platform-notice {
+    flex-wrap: wrap;
+  }
+
+  .tutorial-banner {
     flex-wrap: wrap;
   }
 
