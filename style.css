@@ -206,6 +206,10 @@ body {
   vertical-align: middle;
 }
 
+.about-us-heading {
+  text-align: center;
+}
+
 .construction-image {
   display: block;
   width: calc(100% - 1rem);
@@ -218,6 +222,57 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+}
+
+.technologies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.technologies-table th,
+.technologies-table td {
+  border: 1px solid currentColor;
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.technologies-table th[scope="row"] {
+  white-space: nowrap;
+}
+
+.technologies-table img {
+  display: inline-block;
+  width: 56px;
+  max-height: 56px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.screenshot-gallery figure {
+  margin: 0;
+  padding: 0.5rem;
+  border: 1px solid currentColor;
+}
+
+.screenshot-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.screenshot-gallery figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .table-scroll {
@@ -271,9 +326,16 @@ body {
   margin: 0;
 }
 
-.team-contact-link {
-  display: inline-block;
-  margin-top: 0.5rem;
+.team-email-button {
+  display: block;
+  width: fit-content;
+  margin: 0.5rem auto 0;
+}
+
+.team-email-button img {
+  display: block;
+  width: 80px;
+  height: auto;
 }
 
 .team-role {
@@ -359,6 +421,10 @@ body {
 
   .contact-list li {
     flex-wrap: wrap;
+  }
+
+  .screenshot-gallery {
+    grid-template-columns: 1fr;
   }
 }
 
